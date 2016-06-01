@@ -35,7 +35,7 @@ app.get('/api/', function(req, res) {
 	res.json({teste: true});
 });
 
-router.post('/articles', function(req, res) {
+app.post('/api/articles', function(req, res) {
 
 		var article = new Article(); // get the instance of Article object
 
@@ -53,7 +53,7 @@ router.post('/articles', function(req, res) {
 
 	});
 
-router.get('/articles', function(req, res) {
+app.get('/api/articles', function(req, res) {
 
 	var query   = req.query.q || '',
 			type    = req.query.entity_type || req.query.q;
@@ -83,7 +83,7 @@ router.get('/articles', function(req, res) {
 
 });
 
-router.get('/types', function(req, res) {
+app.get('/api/types', function(req, res) {
 		Article.find({}, {type: 1}, function(err, articles) {
 
 			var statusCode = (articles.length > 0) ? 200 : 204;
@@ -94,8 +94,6 @@ router.get('/types', function(req, res) {
 // more routes for our API will happen here
 
 // REGISTER OUR ROUTES -------------------------------
-// all of our routes will be prefixed with /api
-app.use('/api', router);
 
 // START THE SERVER
 // =============================================================================
