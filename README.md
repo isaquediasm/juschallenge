@@ -25,3 +25,23 @@ $ sudo apt-get install nodejs
 * *Node.js* -  <a href="http://nodejs.org/download/">Download</a> and Install Node.js or use the packages within brew or macports.
 * *MongoDB* - Follow the tutorial here - <a href="https://docs.mongodb.org/manual/tutorial/install-mongodb-on-os-x/">Install mongodb on OSX</a>
 * *git* - Get git <a href="http://git-scm.com/download/mac">from here</a>.
+
+## Prerequisite packages
+Install all the needed packages
+
+```bash
+npm install
+```
+
+## Running locally
+Run the project in your local server
+
+```bash
+npm start
+```
+
+## Testing
+Run unit tests
+```bash
+npm test
+```

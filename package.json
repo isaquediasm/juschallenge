@@ -1,6 +1,7 @@
 {
   "name": "JusChallenge",
   "main": "server.js",
+  "author": "Isaque Dias <isaquedias@gmail.com>",
   "dependencies": {
     "express": "~4.0.0",
     "mongoose": "~3.6.13",
