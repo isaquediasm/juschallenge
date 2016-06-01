@@ -48,6 +48,12 @@ Run the project in your local server
 npm start
 ```
 
+## Creating an article
+
+```bash
+curl -H "Content-Type: application/json" -d '{"title": "Article", "type": "Category"}' http://localhost:8080/api/articles
+```
+
 ## Testing
 Run unit tests
 ```bash
