@@ -1,0 +1,177 @@
+body {
+	background-color: rgb(205, 232, 236);
+	font-family: 'Raleway';
+}
+
+.search-box {
+	position: relative;
+	width: 700px;
+	margin: 150px auto;
+}
+
+.search-box label {
+	position: relative;
+	top: -20px;
+	float: left;
+	font-size: 30px;
+	font-weight: bold;
+	transition: all 0.5s cubic-bezier(0, 1, 0.5, 2);
+	color: #fff;
+
+}
+
+/* .search-box:hover label {
+	top: -10px;
+
+}*/	
+
+.search-box input {
+	font-family: 'Raleway';
+	color: #999;
+	width: 620px;
+	font-size: 20px;
+	padding: 25px 0px 25px 80px;
+	border: none;
+	border-bottom: 4px solid #B2CCD0;
+	z-index: -1;
+	transition: all 0.5s cubic-bezier(0, 1, 0.5, 2);
+	
+}
+
+input:focus {
+	outline:none;
+	transform: scale(1.05);
+	padding-left: 85px;
+}
+
+.search-box:before {
+	position: absolute;
+	content: url('../img/search.svg');
+	top: 55px;
+	left: 0px;
+	margin-left: 25px;
+	float: left;
+	z-index: 9999;
+}
+
+.search-box .suggestions {
+	opacity: 0;
+	display: block;
+	position: relative;
+	float: left;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	background-color: #fff;
+	transition: all .5s;
+}
+
+.search-box .suggestions li {
+	padding: 3%;
+	list-style: none;
+	border-bottom: 1px solid #f2f2f2;
+	color: #666;
+	cursor: pointer;
+	transition: all 0.35s;
+	z-index: 2;
+	transition: all .5s;
+}
+
+.search-box .suggestions li:hover {
+	background-color: #f9f9f9;
+	transform: scale(1.1);
+	z-index: 9999;
+
+}
+
+.search-box .cancel {
+	position: relative;
+	float: right;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #666;
+	margin-top: -57px;
+	margin-right: 200px;
+	z-index: 999;
+	font-size: 12px;
+	transition: all .3s;
+	cursor: pointer;
+}
+
+.search-box .cancel:before {
+	position: relative;
+	content: url('../img/cancel.svg');
+	margin-right: 5px;
+	top: 8px;
+}
+
+.search-box .cancel:hover {
+	opacity: .4;
+}
+
+.search-box .type {
+	position: relative;
+	float: right;
+	margin-top: -60px;
+	margin-right: 30px;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.search-box .type .single span {
+	position: relative;
+	top: -8px;
+	margin-right: 10px;
+	font-weight: bold;
+	color: #A9C3C7;
+}
+.search-box .type .single:after {
+	content: url('../img/down.svg');
+}
+
+.search-box .type .drop {
+	position: relative;
+	background: #fff;
+	margin: 0;
+	margin-top: -110px;
+	padding: 0;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.search-box .type .drop li {
+	list-style: none;
+	margin: 0 ;
+	cursor: pointer;
+	transition: all 0.4s;
+	z-index: 2;
+	padding: 10px 15px;
+	font-weight: bold;
+	color: #A9C3C7;
+	border-bottom: 1px solid #f1f1f1	;
+}
+
+.search-box .type .drop li:last-child {
+	border-bottom: 4px solid #B2CCD0;
+}
+.search-box .type .drop li:hover { 
+	background-color:  #f1f1f1;
+}
+
+.type-label {
+	position: relative;
+  float: right;
+  font-size: 12px;
+  border-radius: 5px;
+  border: 2px solid #B2CCD0;
+  text-transform: uppercase;
+  padding: 5px;
+  color: #9AB5B9;
+  margin-top: -4px;
+}
+
+.show {
+	opacity: 1 !important;
+	visibility: visible !important;
+	transition: all .5s ;
+}
