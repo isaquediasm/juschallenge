@@ -30,7 +30,6 @@ describe('Searching', function() {
   });
 
   it('should make a simple search and return no results', function(done) {
-
     request(app)
       .get('/api/articles?q=noresult123')
       .expect(204, done);
