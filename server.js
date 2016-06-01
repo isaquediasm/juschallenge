@@ -31,6 +31,10 @@ var port = process.env.PORT || 8080;
 // =============================================================================
 var router = express.Router();  
 
+app.get('/api/', function(req, res) {
+	res.json({teste: true});
+});
+
 router.post('/articles', function(req, res) {
 
 		var article = new Article(); // get the instance of Article object
