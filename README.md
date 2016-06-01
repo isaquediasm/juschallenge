@@ -1,5 +1,6 @@
 ## Jusbrasil Challenge
 [![Build Status](https://travis-ci.org/isaquediasm/juschallenge.svg?branch=master)](https://travis-ci.org/isaquediasm/juschallenge)
+An autocomplete search developed for the Jusbrasil Challenge.
 
 ## Prerequisite Technologies
 ### Linux
@@ -25,6 +26,12 @@ $ sudo apt-get install nodejs
 * *Node.js* -  <a href="http://nodejs.org/download/">Download</a> and Install Node.js or use the packages within brew or macports.
 * *MongoDB* - Follow the tutorial here - <a href="https://docs.mongodb.org/manual/tutorial/install-mongodb-on-os-x/">Install mongodb on OSX</a>
 * *git* - Get git <a href="http://git-scm.com/download/mac">from here</a>.
+
+## Clone the repo
+
+```bash
+git clone https://github.com/isaquediasm/juschallenge.git
+```
 
 ## Prerequisite packages
 Install all the needed packages

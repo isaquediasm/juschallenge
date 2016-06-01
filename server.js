@@ -13,7 +13,7 @@ var Article      = require('./app/models/article');
 
 // connect to database
 var db = process.env.MONGODB_URI || 'mongodb://localhost/jusbrasil';
-mongoose.connect(process.env.MONGODB_URI); 
+mongoose.connect(db); 
 
 // configure the public directory
 app.use('/', express.static(path.join(__dirname, 'public')));
