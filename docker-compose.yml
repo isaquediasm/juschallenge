@@ -1,11 +1,11 @@
 app:
-  build: .
   links:
    - db
   ports:
    - "8080:8080" # change to whatever port is to be used
   environment:
    - NODE_ENV=development # production for staging
+  image: isaquediasm/juschallenge
 db:
   image: mongo
   ports:
