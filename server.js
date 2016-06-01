@@ -1,3 +1,7 @@
+/*
+ * Author: Isaque Dias
+ * License: MIT license
+ */
 
 // call the dependencies
 var express      = require('express');       
@@ -8,7 +12,8 @@ var mongoose     = require('mongoose');
 var Article      = require('./app/models/article');
 
 // connect to database
-mongoose.connect('mongodb://localhost/jusbrasil'); 
+var db = process.env.MONGODB_URI || 'mongodb://localhost/jusbrasil';
+mongoose.connect(db); 
 
 // configure the public directory
 app.use('/', express.static(path.join(__dirname, 'public')));
