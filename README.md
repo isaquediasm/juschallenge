@@ -1,5 +1,6 @@
 ## Jusbrasil Challenge
 [![Build Status](https://travis-ci.org/isaquediasm/juschallenge.svg?branch=master)](https://travis-ci.org/isaquediasm/juschallenge)
+
 An autocomplete search developed for the Jusbrasil Challenge.
 
 ## Prerequisite Technologies
